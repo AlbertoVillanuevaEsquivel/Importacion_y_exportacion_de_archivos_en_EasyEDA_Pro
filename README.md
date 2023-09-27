@@ -28,13 +28,13 @@ Una vez que ya se tenga terminado el proyecto en Fusion 360, se debe exportar to
 1. Abrir EasyEDA
 2. Desde el menú de inicio se puede ver una gran variedad de iconos dentro de la sección de __Quick Start__, a simple vista se puede observar que se pueden importar archivos de EasyEDA, Altium y KiCad, sin embargo hay que dar click en __Import Other__
    
-   ![Quick Start Menu](Quick%20Start.jpg "Quick Start Menu")
+   ![Quick Start Menu](./Guia exportacion EasyEDA/Quick%20Start.jpg "Quick Start Menu")
 
 
 3. Dar click dentro de la sección __File Type__, se desplegará una serie de formatos compatibles para la importación
 
 
-   ![Import File](Import%20File.jpg "Import File")
+   ![Import File](./Guia exportacion EasyEDA/Import%20File.jpg "Import File")
 
 
 A pesar de que no es compatible la extensión .f3z utilizaremos archivos con el mismo formato que __Eagle__.
@@ -52,7 +52,7 @@ Tal cual no es posible exportar todo el archivo de proyecto en otro formato que 
 1. Abrir el archivo del diagrama esquemático y dar click en el icono de __Archivo__ en la esquina superior izquierda para acceder a la opción de __Exportar__
 
 
-   ![Fusion Export](Fusion-Export.gif "Fusion Export")
+   ![Fusion Export](./Guia exportacion EasyEDA/Fusion-Export.gif "Fusion Export")
 
 
 2. Dentro del menú exportar, aparecerán una serie de casillas:
@@ -61,7 +61,7 @@ Tal cual no es posible exportar todo el archivo de proyecto en otro formato que 
    * Ubicación: La ruta donde se guardará
 
 
-   ![Export Menu](Export%20Menu.jpg "Export Menu")
+   ![Export Menu](./Guia exportacion EasyEDA/Export%20Menu.jpg "Export Menu")
 
 
 3. Dar click en exportar
@@ -88,20 +88,20 @@ Antes de importar la librería es necesario crearla dentro de EasyEDA para impor
 1. Desde el menú de inicio de EasyEDA, dar click en el icono de __New Library__ y le asignamos un nombre a nuestra librería.
 
 
-   ![New Library Icon](New%20Library%20Icon.jpg "New Library Icon")
-   ![Library Name](Library%20Name.jpg "Library Name")
+   ![New Library Icon](./Guia exportacion EasyEDA/New%20Library%20Icon.jpg "New Library Icon")
+   ![Library Name](./Guia exportacion EasyEDA/Library%20Name.jpg "Library Name")
 
 
 2. Dentro del icono de __Import Other__ hay que seleccionar el tipo de archivo como __Eagle__, dar click en el campo de __Filename__ y seleccionar el archivo de la librería que vamos a importar, después de esto solo seleccionar la opción de __Import File and Extract Libraries__ como se muestra en la siguiente imágen:
 
 
-   ![Import Menu](Import%20Menu.jpg "Import Menu")
+   ![Import Menu](./Guia exportacion EasyEDA/Import%20Menu.jpg "Import Menu")
 
 
 3. Al darle click en Importar se desplegará una ventana donde podemos seleccionar los componentes de la librería que queremos importar y un campo donde se selecciona la librería de destino en donde se agregarán todos los componentes, aquí en este campo seleccionaremos la librería creada anteriormente.
 
 
-   ![Import Components](Import%20Components.jpg "Import Components")
+   ![Import Components](./Guia exportacion EasyEDA/Import%20Components.jpg "Import Components")
 
 
 Una vez importadas las librerías necesarias, podremos pasar a importar proyectos.
@@ -122,7 +122,7 @@ Debido a que no se pueden importar archivos de proyectos de Fusion 360, primero 
 2. Hay que regresar al menú de inicio y dentro del icono de __Import Other__ hay que seleccionar el tipo de archivo como __Eagle__, dar click en el campo de __Filename__ y seleccionar el archivo Esquemático que vamos a importar, después de esto solo seleccionar la opción de __Import File__ como se muestra en la siguiente imágen:
 
 
-   ![Import Schematic Menu](Import%20Schematic%20Menu.jpg "Import Schematic Menu")
+   ![Import Schematic Menu](./Guia exportacion EasyEDA/Import%20Schematic%20Menu.jpg "Import Schematic Menu")
 
 
    Después de importarlo hay que volver a repetir el mismo paso para la importación de la PCB.
@@ -133,7 +133,7 @@ Debido a que no se pueden importar archivos de proyectos de Fusion 360, primero 
 3. Después de esto, nos desplegará nuestro diagrama esquemático o PCB dependiendo que hayamos importado, y en el menú de __Project Design__ que se encuentra del lado izquierdo de la pantalla también nos aparecerán nuestros archivos importados junto con los archivos generados por defecto.
 
 
-   ![Imported Files](Imported%20Files.jpg "Imported Files")
+   ![Imported Files](./Guia exportacion EasyEDA/Imported%20Files.jpg "Imported Files")
    
 4. Los archivos de esquemático y PCB generados por defecto están dentro de un archivo llamado "__Board__" esto le ayuda al software a vincular los diseños de esquemático y PCB entre sí. Sin embargo podemos observar que los archivos importados son independientes uno del otro, para vincularlos entre sí primero hay que borrar los archivos generados por defecto. Después de esto hay que darle click derecho al archivo de esquemático y seleccionar "__Set as New Board__", después de esto con la PCB damos click derecho y "__Set as an existing board__"
 
@@ -141,13 +141,13 @@ Debido a que no se pueden importar archivos de proyectos de Fusion 360, primero 
 5. Para terminar de vincular ambos archivos hay que asociar cada símbolo esquemático con su footprint, para esto daremos click en cualquier componente y del lado derecho accederemos a las propiedades de este desde el menú __Property__, hay que dar click en la casilla de footprint y nos desplegará el __Footprint Manager__
 
 
-   ![Component properties](Component-Properties.gif "Component properties")
+   ![Component properties](./Guia exportacion EasyEDA/Component-Properties.gif "Component properties")
 
 
 6. Dentro del __Footprint Manager__ hay que seleccionar el componente y en la parte inferior buscar entre las librerías el footprint correspondiente al componente, hay que hacer esto para cada componente en el diseño y dar click en __Update__
 
 
-   ![Footprint Manager](Footprint-Manager.gif "Footprint Manager")
+   ![Footprint Manager](./Guia exportacion EasyEDA/Footprint-Manager.gif "Footprint Manager")
 
 
    __*Nota: Asegurate de que el número de pines en el simbolo esquemático sea igual al número de pines en el footprint, de lo contrario EasyEDA marcara esta diferencia como un error__
@@ -186,7 +186,7 @@ EasyEDA posee una herramienta para poder hacer la panelización de manera rápid
 1. Desde la barra de herramientas dar clic en __Tools>Panelize__ y el programa nos abrirá la herramienta de panelización
 
 
-   ![Panelize Tool](Panelize%20Tool.jpg "Panelize Tool")
+   ![Panelize Tool](./Guia exportacion EasyEDA/Panelize%20Tool.jpg "Panelize Tool")
 
 
    La herramienta se divide en 4 secciones:
@@ -209,7 +209,7 @@ EasyEDA posee una herramienta para poder hacer la panelización de manera rápid
 Una vez generado el panel, si se requieren hacer modificaciones no es necesario modificar las PCBs una por una, solo hay que modificar la primera PCB del panel y automáticamente el cambio se verá reflejado en las demás.
 
 
-   ![Panel](Panel.jpg "Panel")
+   ![Panel](./Guia exportacion EasyEDA/Panel.jpg "Panel")
 
 
 En caso de que se requiera deshacer el panel y regresar a una sola PCB no se puede usar Ctrl+Z, porque si no va a deshacer el último cambio realizado a la PCB, para esto hay que entrar otra vez a la herramienta de panelización y seleccionar __No Panelize__
@@ -236,18 +236,18 @@ Los archivos Bill of Materials o mejor conocidos como archivos BOM es una lista 
 2. Se abrirá una advertencia para saber si queremos revisar la estandarización de dispositivos, esto a pesar de que es un proceso opcional, nos permite asociar un número de parte de LCSC Electronics a cada componente, para así tener una referencia de las piezas al generar el BOM, en caso de dar click en __Check Device Standardisation__ nos habilitará del lado izquierdo de la pantalla una pestaña llamada __Device Standardization__, al acceder a está nos dará la opción de asignar el número de parte de LCSC.
 
 
-![Device Standardization](Device%20Standardization.jpg "Device Standardization")
+![Device Standardization](./Guia exportacion EasyEDA/Device%20Standardization.jpg "Device Standardization")
 
 
 3. Si al dar click en Export BOM accedemos a la opción de __Have been Check__ en la advertencia anterior, se abrirá el generador de archivos BOM, dentro de este podemos filtrar datos y seleccionar los campos que deseamos que incluya nuestro archivo, así como el nombre del archivo y el formato de este. Una vez terminado, dar click en __Export BOM__.
 
 
-![Export BOM](Export%20BOM.jpg "Export BOM")
+![Export BOM](./Guia exportacion EasyEDA/Export%20BOM.jpg "Export BOM")
 
 
 4. Se habrá generado un archivo separado por comas (.csv) o de hoja de cálculo (.xlsx) con los componentes de nustro diseño
    
-![Generated BOM](Generated%20BOM.jpg "Generated BOM")
+![Generated BOM](./Guia exportacion EasyEDA/Generated%20BOM.jpg "Generated BOM")
 
 
 __*Nota:__ En caso de haber hecho la panelización, el archivo BOM se generará para una sola tarjeta, no para todo el panel
@@ -268,7 +268,7 @@ Los archivos Gerber son utilizados para la fabricación de las PCBs, para genera
    2. Se abrirá un menú de exportación de archivos con dos opciones, __One Key Export__ para exportar de forma rápida los archivos Gerber, o __Custom Config__ donde se puede seleccionar las capas que van a ser exportadas, unidades de medición y más. Una vez configurado todo hay que dar click en __Export Gerber__
 
 
-   ![Export Gerber](Export%20Gerber.jpg "Export Gerber")
+   ![Export Gerber](./Guia exportacion EasyEDA/Export%20Gerber.jpg "Export Gerber")
 
 
    3. Se generará un archivo .zip con todos los archivos Gerber, para corroborar que se generaron correctamente podemos visualizarlos con un software de CAM como FlatCAM u otros
@@ -298,13 +298,13 @@ Este tipo de archivos se utilizan para la colocar componentes en la PCB con una 
    Una vez configurado todo hay que dar click en __Export__
 
 
-   ![Export Pick and Place](Export%20Pick%20and%20Place%20File.jpg "Export Pick and Place")
+   ![Export Pick and Place](./Guia exportacion EasyEDA/Export%20Pick%20and%20Place%20File.jpg "Export Pick and Place")
 
 
    3. Se habrá generado un archivo separado por comas (.csv) o de hoja de cálculo (.xlsx) con las coordenadas de los centros de los footprint de cada componente
 
 
-   ![Pick and Place File](Pick%20and%20Place%20File.jpg "Pick and Place File")
+   ![Pick and Place File](./Guia exportacion EasyEDA/Pick%20and%20Place%20File.jpg "Pick and Place File")
 
 
 [Subir a Contenido](#contenido)
